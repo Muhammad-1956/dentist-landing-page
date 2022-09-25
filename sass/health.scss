@@ -1,11 +1,11 @@
 //-------------Start Variables---------------------
-:root {
-    --main-color: rgb(238, 183, 87);
-    --btn-color: rgb(205, 48, 74);
-    --aqua-color: rgba(187, 211, 239, 0.184);
-    --green-color: rgb(16, 80, 83);
-    --yellow-color: rgb(255, 187, 0);
-}
+
+    $main-color: rgb(238, 183, 87);
+    $btn-color: rgb(205, 48, 74);
+    $aqua-color: rgba(187, 211, 239, 0.184);
+    $green-color: rgb(16, 80, 83);
+    $yellow-color: rgb(255, 187, 0);
+
 //-------------End Variables---------------------
 //-------------Start Mixins---------------------
 @mixin mt-100 {
@@ -54,7 +54,7 @@
         ul{
             min-width: fit-content;
             height: 70px;
-            background-color: var(--green-color);
+            background-color: $green-color;
             li{
                 font-size: 0.7rem;
                 a{
@@ -95,7 +95,7 @@
 }
 
 .navbar-light {
-    background-color: var(--green-color);
+    background-color: $green-color;
 
     .navbar-nav {
         .nav-link {
@@ -103,7 +103,7 @@
 
             &.active,
             &:hover {
-                color: var(--main-color);
+                color: $main-color;
             }
         }
 
@@ -113,7 +113,7 @@
 .btn {
     padding: 13px 1.5rem;
     font-size: 1.0rem;
-    background-color: var(--main-color);
+    background-color: $main-color;
 }
 
 //-------------End Navbar---------------------
@@ -121,7 +121,7 @@
 .smile {
     max-height: 700px;
     overflow: hidden;
-    background-color: var(--green-color);
+    background-color: $green-color;
 
     .container {
         margin-top: 80px;
@@ -133,7 +133,7 @@
         h1 {
             margin-top: 30px;
             font-size: 1.5rem;
-            color: var(--main-color);
+            color: $main-color;
         }
 
         h2 {
@@ -146,8 +146,8 @@
             }
             &::after {
                 content: "Smile.";
-                color: var(--main-color);
-                border-bottom: 4px solid var(--main-color);
+                color: $main-color;
+                border-bottom: 4px solid $main-color;
             }
         }
 
@@ -165,14 +165,14 @@
             button {
                 text-transform: capitalize;
                 padding: 10px 25px;
-                background-color: var(--main-color);
+                background-color: $main-color;
                 border-radius: 5px;
                 border: none;
                 margin-right: 20px;
                 &.find {
-                    color: var(--main-color);
-                    border: 1px solid var(--main-color);
-                    background-color: var(--green-color);
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                    background-color: $green-color;
                 }
             }
         }
@@ -215,7 +215,7 @@
                 content: "";
                 width: 128px;
                 height: 4px;
-                background-color: var(--main-color);
+                background-color: $main-color;
                 top: 100px;
                 left: 258px;
                 position: absolute;
@@ -239,7 +239,7 @@
 
                 &::marker {
                     font-size: 1.8rem;
-                    color: var(--main-color);
+                    color: $main-color;
                 }
             }
         }
@@ -291,7 +291,7 @@
                 content: "";
                 width: 120px;
                 height: 4px;
-                background-color: var(--main-color);
+                background-color: $main-color;
                 top: 58px;
                 right: 514px;
                 position: absolute;
@@ -306,7 +306,7 @@
 
     .gallery {
         margin-top: 50px;
-        background-color: var(--green-color);
+        background-color: $green-color;
         width: 100%;
         height: 750px;
 
@@ -343,7 +343,7 @@
             content: "";
             width: 231px;
             height: 4px;
-            background-color: var(--main-color);
+            background-color: $main-color;
             top: 58px;
             right: 450px;
             position: absolute;
@@ -377,7 +377,7 @@
                 height: 26px;
                 margin-left: -1.5em;
                 margin-right: 1.5rem;
-                background-color: var(--main-color);
+                background-color: $main-color;
                 cursor: pointer;
             }
         }
@@ -398,7 +398,7 @@
                 width: 100%;
                 padding-bottom: 10px;
                 &.bb{
-                    border-bottom: 5px solid var(--main-color);
+                    border-bottom: 5px solid $main-color;
                     margin-bottom: 30px;
                 }
             }
@@ -457,7 +457,7 @@
         margin-bottom: 55px;
         @include mt-100();
         span{
-            border-bottom: 4px solid var(--main-color);
+            border-bottom: 4px solid $main-color;
         }
     }
     .container-3{
@@ -531,7 +531,7 @@
                 color: black;
                 margin-right: 5px;
                 border-radius: 49%;
-                background-color: var(--main-color);
+                background-color: $main-color;
             }
             .active{
                 width: 25px;
@@ -563,7 +563,7 @@
                     margin-bottom: 20px;
                 }
                 span{
-                        border-bottom: 5px solid var(--main-color);
+                        border-bottom: 5px solid $main-color;
                         margin-bottom: 30px;
                 }
                 .target-2{
@@ -1131,7 +1131,7 @@
             }
             button{
                 width: 60px;
-                height: 41.6px;
+                height: 42px;
                 .svg-inline--fa{
                     font-size: 1.1rem;
                 }
