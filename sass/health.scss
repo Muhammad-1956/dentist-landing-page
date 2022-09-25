@@ -1,0 +1,679 @@
+//-------------Start Variables---------------------
+:root {
+    --main-color: rgb(238, 183, 87);
+    --btn-color: rgb(205, 48, 74);
+    --aqua-color: rgba(187, 211, 239, 0.184);
+    --green-color: rgb(16, 80, 83);
+    --yellow-color: rgb(255, 187, 0);
+}
+//-------------End Variables---------------------
+//-------------Start Mixins---------------------
+@mixin mt-100 {
+    margin-top: 100px;
+}
+@mixin box {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 12px;
+}
+@mixin box-customized{
+    @include box();
+    max-height: 80px;
+    margin-bottom: 15px;
+    p{
+        display: inline-block;
+        font-size: 0.9rem;
+        border-left: 2px solid #eee;
+        height: 60px;
+        padding-left: 30px;
+        margin-left: 10px;
+        width: fit-content;
+        &::after{
+            content: "10:10 am - 11:00 am blood doctor";
+            width: 100px;
+            height: 0px;
+            color: rgb(131, 130, 130);
+            top: 20px;
+            left: 28px;
+            font-size: .6rem;
+        }
+    }
+    .btn{
+        background-color: transparent;
+        border: 0px;
+        padding: 0px 0px;
+    }
+    svg{
+        color: var(--main-color);
+        font-size: 20px;
+    }
+    .dropdown{
+        display: inline-block;
+        margin-left: 84px;
+        ul{
+            min-width: fit-content;
+            height: 70px;
+            background-color: var(--green-color);
+            li{
+                font-size: 0.7rem;
+                a{
+                    padding: 0px 35px 0px 10px;
+                    color: white;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+@mixin word($word,$color,$border-color,$top-value,$left-value) {
+    &::after {
+        content: $word;
+        position: absolute;
+        color: $color;
+        border-bottom: 4px solid $border-color;
+        top: $top-value;
+        left: $left-value;
+    }
+}*/
+//-------------End Mixins---------------------
+//-------------Start Navbar---------------------
+.navbar {
+    min-height: 93px;
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+.navbar-light {
+    background-color: var(--green-color);
+
+    .navbar-nav {
+        .nav-link {
+            color: white;
+
+            &.active,
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+
+    }
+}
+
+.btn {
+    padding: 13px 1.5rem;
+    font-size: 1.0rem;
+    background-color: var(--main-color);
+}
+
+//-------------End Navbar---------------------
+//-------------Start Smile Section---------------------
+.smile {
+    max-height: 700px;
+    overflow: hidden;
+    background-color: var(--green-color);
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .text {
+        width: 40%;
+
+        h1 {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: var(--main-color);
+        }
+
+        h2 {
+            color: white;
+            font-size: 3.1rem;
+            width: 85%;
+            position: relative;
+            span {
+                font-weight: 600;
+            }
+            &::after {
+                content: "Smile.";
+                color: var(--main-color);
+                border-bottom: 4px solid var(--main-color);
+            }
+        }
+
+        P {
+            width: 85%;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 33px;
+        }
+
+        .btns {
+            width: 60%;
+            margin-left: 0px;
+
+            button {
+                text-transform: capitalize;
+                padding: 10px 25px;
+                background-color: var(--main-color);
+                border-radius: 5px;
+                border: none;
+                margin-right: 20px;
+                &.find {
+                    color: var(--main-color);
+                    border: 1px solid var(--main-color);
+                    background-color: var(--green-color);
+                }
+            }
+        }
+    }
+
+    .image {
+        width: 45%;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//-------------End Smile Section---------------------
+//-------------Start Our Dentist Section---------------------
+.our-dentist {
+    margin-top: 130px;
+
+    .image {
+        width: 50%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .text {
+        width: 45%;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 128px;
+                height: 4px;
+                background-color: var(--main-color);
+                top: 100px;
+                left: 258px;
+                position: absolute;
+            }
+        }
+
+        span {
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        p {
+            width: 68%;
+        }
+
+        ul {
+            li {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin-bottom: 12px;
+
+                &::marker {
+                    font-size: 1.8rem;
+                    color: var(--main-color);
+                }
+            }
+        }
+
+        h2,
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//-------------End Our Dentist Section---------------------
+//-------------Start Communication Section---------------------
+.communication {
+    margin-top: 90px;
+
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .im {
+        width: 20%;
+
+        img {
+            width: 85%;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+//-------------End Communication Section---------------------
+//-------------Start Our Gallery Section---------------------
+.our-gallery {
+    @include mt-100();
+
+    .title {
+        .p-1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 120px;
+                height: 4px;
+                background-color: var(--main-color);
+                top: 58px;
+                right: 514px;
+                position: absolute;
+            }
+        }
+
+        .p-2 {
+            width: 520px;
+            margin: auto;
+        }
+    }
+
+    .gallery {
+        margin-top: 50px;
+        background-color: var(--green-color);
+        width: 100%;
+        height: 750px;
+
+        img {
+            max-width: 300px;
+            max-height: 400px;
+        }
+
+        .img-mb {
+            margin-bottom: 30px;
+        }
+
+        div {
+            width: 75%;
+
+            div {
+                flex-direction: column;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+//-------------End Our Gallery Section---------------------
+//-------------Start An Appointment Section---------------------
+.appointment {
+    @include mt-100();
+    p {
+        font-size: 2.4rem;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 55px;
+        &::after {
+            content: "";
+            width: 231px;
+            height: 4px;
+            background-color: var(--main-color);
+            top: 58px;
+            right: 450px;
+            position: absolute;
+        }
+    }
+    .image{
+        width: 45%;
+        img{
+            width: 95%;
+        }
+    }
+    .schedule {
+        width: 50%;
+        & > div{
+            width: 82%;
+        }
+        .bb{
+            border-bottom: 2px solid #eee;
+            margin-bottom: 23px;
+        }
+        h2{
+            font-size: 2.0rem;
+            font-weight: 700;
+            margin-bottom: 23px;
+        }
+        .form-check {
+            display: inline-block;
+            margin-bottom: 20px;
+            &-input {
+                width: 2.5rem;
+                height: 26px;
+                margin-left: -1.5em;
+                margin-right: 1.5rem;
+                background-color: var(--main-color);
+                cursor: pointer;
+            }
+        }
+        label {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .calender{
+            margin-bottom: 20px;
+        }
+        .boxes{
+            width: 47%;
+            flex-direction: column;
+            h3{
+                font-size: 1.4rem;
+            }
+            & > div{
+                width: 100%;
+                padding-bottom: 10px;
+                &.bb{
+                    border-bottom: 5px solid var(--main-color);
+                    margin-bottom: 30px;
+                }
+            }
+            .box-1{
+                @include box();
+                span{
+                    border-left: 2px solid #eee;
+                    padding-left: 30px;
+                    margin-left: 10px;
+                }
+            }
+            .box-2{
+                @include box-customized();
+            }
+            .box-3{
+                @include box-customized();
+                p{
+                    &::after{
+                        content: "11:10 am - 1:00 pm general doctor";
+                    }
+                }
+            }
+            .box-4{
+                p{
+                    &::after{
+                        content: "03:10 am - 03:50 am blood doctor";
+                    }
+                }
+                .dropdown{
+                    left: 130px;
+                    top: -115px;
+                }
+            }
+            .box-6{
+                p{
+                    &::after{
+                        content: "05:10 am - 07:00 pm general doctor";
+                    }
+                }
+                .dropdown{
+                    left: 130px;
+                    top: -115px;
+                }
+            }
+        }
+    }
+}
+//-------------End An Appointment Section---------------------
+//-------------Start Feedback Section---------------------
+.feedback{
+    h2{
+        font-size: 2.4rem;
+        font-weight: 600;
+        width: 550px;
+        margin: auto;
+        margin-bottom: 55px;
+        @include mt-100();
+        span{
+            border-bottom: 4px solid var(--main-color);
+        }
+    }
+    .container-3{
+        width: 90%;
+        margin: auto;
+        .image{
+            width: fit-content;
+            img{
+                width: 409.6px;
+                height: 270.4px;
+            }
+        }
+    }
+    .carousel{
+        width: 600px;
+        p{
+            color: black;
+            font-size: 1.2rem;
+            margin-left: 10px;
+            margin-bottom: 40px;
+            color: rgb(74, 73, 73);
+            font-weight: 400;
+        }
+        .carousel-inner{
+            .carousel-item {
+                .carousel-caption{
+                    .svg-inline--fa {
+                        color: bisque;
+                        margin-left: -40px;
+                        font-size: 40px;
+                    }
+                    .left-icon{
+                        margin-left: 5px;
+                        margin-bottom: -12px;
+                    }
+                    .personal-data{
+                        img{
+                            display: inline-block;
+                            width: 96.6px;
+                            height: 95.5px;
+                            border-radius: 25px;
+                            margin-left: -240px;
+                            margin-bottom: 15px;
+                        }
+                        h5{
+                            display: inline-block;
+                            position: relative;
+                            width: 140px;
+                            font-size: 22px;
+                            color: black;
+                            top: -21px;
+                            &::after{
+                                content:"Parents";
+                                position: absolute;
+                                color: rgb(74, 73, 73);
+                                font-size: 14px;
+                                font-weight: 400;
+                                top: 30px;
+                                left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-indicators {
+            margin-left: -330px;
+            & [data-bs-target] {
+                width: 16px;
+                height: 8px;
+                color: black;
+                margin-right: 5px;
+                border-radius: 49%;
+                background-color: var(--main-color);
+            }
+            .active{
+                width: 25px;
+                height: 9px;
+            }
+            
+        }
+    }
+}
+//-------------End Feedback Section---------------------
+//-------------Start Get In Touch Section---------------------
+.get-in-touch{
+    margin-top: 80px;
+    background-color: rgb(234, 239, 241);
+    .container{
+        padding: 60px 0px;
+        .container-2{
+            width: 80%;
+            margin: auto;
+            .text{
+                width: 47%;
+                h5{
+                    margin-top: 10px;
+                    font-size: 1.4rem;
+                }
+                .target{
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                span{
+                        border-bottom: 5px solid var(--main-color);
+                        margin-bottom: 30px;
+                }
+                .target-2{
+                    font-size: 1.1rem;
+                    width: 85%;
+                    margin-bottom: 30px;
+                }
+                form{
+                    width: 410px;
+                    input{
+                        display: inline-block;
+                        width: 78%;
+                        padding: 12px 0px 12px 25px;
+                        border-radius: 0px;
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                    }
+                    button{
+                        width: 90px;
+                        height: 50px;
+                        border-radius: 0px;
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                        margin-left: -5px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+            .image{
+                width: 53%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+//-------------End Get In Touch Section---------------------
+//-------------Start Footer Section---------------------
+.footer{
+    background-color: rgb(23, 3, 3);
+    .container{
+        padding-top: 90px;
+        img{
+            margin-bottom: 23px;
+        }
+        .target{
+            width: 300px;
+        }
+        .target-2{
+            margin-top: 60px;
+            font-size: .8rem;
+        }
+        h4{
+            margin-bottom: 30px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0px;
+            li{
+                margin-bottom: 12px;
+                a{
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    color: rgb(133, 130, 130);
+                }
+            }
+        }
+        .social-media{
+            .svg-inline--fa {
+                margin-top: 20px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid rgb(192, 188, 188);
+                border-radius: 50%;
+                padding: 7px;
+                margin-right: 8px;
+            }
+        }
+        form{
+            width: 410px;
+            input{
+                display: inline-block;
+                width: 43%;
+                padding: 12px 0px 12px 25px;
+                border-radius: 0px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                background-color: rgb(234, 239, 241);
+            }
+            button{
+                background-color: rgb(234, 239, 241);
+                width: 70px;
+                height: 50px;
+                border-radius: 0px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                margin-left: -6px;
+                margin-top: -5px;
+                border-left: 1px solid white;
+                .svg-inline--fa{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+//-------------End Footer Section---------------------
+//-------------Start Medium Screen---------------------
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+//-------------End Medium Screen---------------------

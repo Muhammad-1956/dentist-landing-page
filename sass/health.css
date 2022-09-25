@@ -1,0 +1,645 @@
+:root {
+  --main-color: rgb(238, 183, 87);
+  --btn-color: rgb(205, 48, 74);
+  --aqua-color: rgba(187, 211, 239, 0.184);
+  --green-color: rgb(16, 80, 83);
+  --yellow-color: rgb(255, 187, 0);
+}
+
+/*
+@mixin word($word,$color,$border-color,$top-value,$left-value) {
+    &::after {
+        content: $word;
+        position: absolute;
+        color: $color;
+        border-bottom: 4px solid $border-color;
+        top: $top-value;
+        left: $left-value;
+    }
+}*/
+.navbar {
+  min-height: 93px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.navbar-light {
+  background-color: var(--green-color);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.btn {
+  padding: 13px 1.5rem;
+  font-size: 1rem;
+  background-color: var(--main-color);
+}
+
+.smile {
+  max-height: 700px;
+  overflow: hidden;
+  background-color: var(--green-color);
+}
+.smile .container {
+  margin-top: 80px;
+}
+.smile .text {
+  width: 40%;
+}
+.smile .text h1 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.smile .text h2 {
+  color: white;
+  font-size: 3.1rem;
+  width: 85%;
+  position: relative;
+}
+.smile .text h2 span {
+  font-weight: 600;
+}
+.smile .text h2::after {
+  content: "Smile.";
+  color: var(--main-color);
+  border-bottom: 4px solid var(--main-color);
+}
+.smile .text P {
+  width: 85%;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 33px;
+}
+.smile .text .btns {
+  width: 60%;
+  margin-left: 0px;
+}
+.smile .text .btns button {
+  text-transform: capitalize;
+  padding: 10px 25px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+.smile .text .btns button.find {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  background-color: var(--green-color);
+}
+.smile .image {
+  width: 45%;
+  margin-bottom: 30px;
+}
+.smile .image img {
+  width: 100%;
+}
+
+.our-dentist {
+  margin-top: 130px;
+}
+.our-dentist .image {
+  width: 50%;
+}
+.our-dentist .image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+.our-dentist .text {
+  width: 45%;
+}
+.our-dentist .text h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  position: relative;
+}
+.our-dentist .text h2::after {
+  content: "";
+  width: 128px;
+  height: 4px;
+  background-color: var(--main-color);
+  top: 100px;
+  left: 258px;
+  position: absolute;
+}
+.our-dentist .text span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.our-dentist .text p {
+  width: 68%;
+}
+.our-dentist .text ul li {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.our-dentist .text ul li::marker {
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+.our-dentist .text h2,
+.our-dentist .text p {
+  margin-bottom: 30px;
+}
+
+.communication {
+  margin-top: 90px;
+}
+.communication .container {
+  width: 70%;
+  margin: auto;
+}
+.communication .im {
+  width: 20%;
+}
+.communication .im img {
+  width: 85%;
+  margin-bottom: 30px;
+}
+.communication .im p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.our-gallery {
+  margin-top: 100px;
+}
+.our-gallery .title .p-1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  position: relative;
+}
+.our-gallery .title .p-1::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background-color: var(--main-color);
+  top: 58px;
+  right: 514px;
+  position: absolute;
+}
+.our-gallery .title .p-2 {
+  width: 520px;
+  margin: auto;
+}
+.our-gallery .gallery {
+  margin-top: 50px;
+  background-color: var(--green-color);
+  width: 100%;
+  height: 750px;
+}
+.our-gallery .gallery img {
+  max-width: 300px;
+  max-height: 400px;
+}
+.our-gallery .gallery .img-mb {
+  margin-bottom: 30px;
+}
+.our-gallery .gallery div {
+  width: 75%;
+}
+.our-gallery .gallery div div {
+  flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.appointment {
+  margin-top: 100px;
+}
+.appointment p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 55px;
+}
+.appointment p::after {
+  content: "";
+  width: 231px;
+  height: 4px;
+  background-color: var(--main-color);
+  top: 58px;
+  right: 450px;
+  position: absolute;
+}
+.appointment .image {
+  width: 45%;
+}
+.appointment .image img {
+  width: 95%;
+}
+.appointment .schedule {
+  width: 50%;
+}
+.appointment .schedule > div {
+  width: 82%;
+}
+.appointment .schedule .bb {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 23px;
+}
+.appointment .schedule h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+.appointment .schedule .form-check {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.appointment .schedule .form-check-input {
+  width: 2.5rem;
+  height: 26px;
+  margin-left: -1.5em;
+  margin-right: 1.5rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+.appointment .schedule label {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.appointment .schedule .calender {
+  margin-bottom: 20px;
+}
+.appointment .schedule .boxes {
+  width: 47%;
+  flex-direction: column;
+}
+.appointment .schedule .boxes h3 {
+  font-size: 1.4rem;
+}
+.appointment .schedule .boxes > div {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.appointment .schedule .boxes > div.bb {
+  border-bottom: 5px solid var(--main-color);
+  margin-bottom: 30px;
+}
+.appointment .schedule .boxes .box-1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 12px;
+}
+.appointment .schedule .boxes .box-1 span {
+  border-left: 2px solid #eee;
+  padding-left: 30px;
+  margin-left: 10px;
+}
+.appointment .schedule .boxes .box-2 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 12px;
+  max-height: 80px;
+  margin-bottom: 15px;
+}
+.appointment .schedule .boxes .box-2 p {
+  display: inline-block;
+  font-size: 0.9rem;
+  border-left: 2px solid #eee;
+  height: 60px;
+  padding-left: 30px;
+  margin-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.appointment .schedule .boxes .box-2 p::after {
+  content: "10:10 am - 11:00 am blood doctor";
+  width: 100px;
+  height: 0px;
+  color: rgb(131, 130, 130);
+  top: 20px;
+  left: 28px;
+  font-size: 0.6rem;
+}
+.appointment .schedule .boxes .box-2 .btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px;
+}
+.appointment .schedule .boxes .box-2 svg {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.appointment .schedule .boxes .box-2 .dropdown {
+  display: inline-block;
+  margin-left: 84px;
+}
+.appointment .schedule .boxes .box-2 .dropdown ul {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 70px;
+  background-color: var(--green-color);
+}
+.appointment .schedule .boxes .box-2 .dropdown ul li {
+  font-size: 0.7rem;
+}
+.appointment .schedule .boxes .box-2 .dropdown ul li a {
+  padding: 0px 35px 0px 10px;
+  color: white;
+}
+.appointment .schedule .boxes .box-2 .dropdown ul li a:hover {
+  color: black;
+}
+.appointment .schedule .boxes .box-3 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 12px;
+  max-height: 80px;
+  margin-bottom: 15px;
+}
+.appointment .schedule .boxes .box-3 p {
+  display: inline-block;
+  font-size: 0.9rem;
+  border-left: 2px solid #eee;
+  height: 60px;
+  padding-left: 30px;
+  margin-left: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.appointment .schedule .boxes .box-3 p::after {
+  content: "10:10 am - 11:00 am blood doctor";
+  width: 100px;
+  height: 0px;
+  color: rgb(131, 130, 130);
+  top: 20px;
+  left: 28px;
+  font-size: 0.6rem;
+}
+.appointment .schedule .boxes .box-3 .btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px;
+}
+.appointment .schedule .boxes .box-3 svg {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.appointment .schedule .boxes .box-3 .dropdown {
+  display: inline-block;
+  margin-left: 84px;
+}
+.appointment .schedule .boxes .box-3 .dropdown ul {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 70px;
+  background-color: var(--green-color);
+}
+.appointment .schedule .boxes .box-3 .dropdown ul li {
+  font-size: 0.7rem;
+}
+.appointment .schedule .boxes .box-3 .dropdown ul li a {
+  padding: 0px 35px 0px 10px;
+  color: white;
+}
+.appointment .schedule .boxes .box-3 .dropdown ul li a:hover {
+  color: black;
+}
+.appointment .schedule .boxes .box-3 p::after {
+  content: "11:10 am - 1:00 pm general doctor";
+}
+.appointment .schedule .boxes .box-4 p::after {
+  content: "03:10 am - 03:50 am blood doctor";
+}
+.appointment .schedule .boxes .box-4 .dropdown {
+  left: 130px;
+  top: -115px;
+}
+.appointment .schedule .boxes .box-6 p::after {
+  content: "05:10 am - 07:00 pm general doctor";
+}
+.appointment .schedule .boxes .box-6 .dropdown {
+  left: 130px;
+  top: -115px;
+}
+
+.feedback h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: 550px;
+  margin: auto;
+  margin-bottom: 55px;
+  margin-top: 100px;
+}
+.feedback h2 span {
+  border-bottom: 4px solid var(--main-color);
+}
+.feedback .container-3 {
+  width: 90%;
+  margin: auto;
+}
+.feedback .container-3 .image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.feedback .container-3 .image img {
+  width: 409.6px;
+  height: 270.4px;
+}
+.feedback .carousel {
+  width: 600px;
+}
+.feedback .carousel p {
+  color: black;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  color: rgb(74, 73, 73);
+  font-weight: 400;
+}
+.feedback .carousel .carousel-inner .carousel-item .carousel-caption .svg-inline--fa {
+  color: bisque;
+  margin-left: -40px;
+  font-size: 40px;
+}
+.feedback .carousel .carousel-inner .carousel-item .carousel-caption .left-icon {
+  margin-left: 5px;
+  margin-bottom: -12px;
+}
+.feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data img {
+  display: inline-block;
+  width: 96.6px;
+  height: 95.5px;
+  border-radius: 25px;
+  margin-left: -240px;
+  margin-bottom: 15px;
+}
+.feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5 {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  font-size: 22px;
+  color: black;
+  top: -21px;
+}
+.feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5::after {
+  content: "Parents";
+  position: absolute;
+  color: rgb(74, 73, 73);
+  font-size: 14px;
+  font-weight: 400;
+  top: 30px;
+  left: 15px;
+}
+.feedback .carousel .carousel-indicators {
+  margin-left: -330px;
+}
+.feedback .carousel .carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 8px;
+  color: black;
+  margin-right: 5px;
+  border-radius: 49%;
+  background-color: var(--main-color);
+}
+.feedback .carousel .carousel-indicators .active {
+  width: 25px;
+  height: 9px;
+}
+
+.get-in-touch {
+  margin-top: 80px;
+  background-color: rgb(234, 239, 241);
+}
+.get-in-touch .container {
+  padding: 60px 0px;
+}
+.get-in-touch .container .container-2 {
+  width: 80%;
+  margin: auto;
+}
+.get-in-touch .container .container-2 .text {
+  width: 47%;
+}
+.get-in-touch .container .container-2 .text h5 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+.get-in-touch .container .container-2 .text .target {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.get-in-touch .container .container-2 .text span {
+  border-bottom: 5px solid var(--main-color);
+  margin-bottom: 30px;
+}
+.get-in-touch .container .container-2 .text .target-2 {
+  font-size: 1.1rem;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.get-in-touch .container .container-2 .text form {
+  width: 410px;
+}
+.get-in-touch .container .container-2 .text form input {
+  display: inline-block;
+  width: 78%;
+  padding: 12px 0px 12px 25px;
+  border-radius: 0px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.get-in-touch .container .container-2 .text form button {
+  width: 90px;
+  height: 50px;
+  border-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.get-in-touch .container .container-2 .image {
+  width: 53%;
+}
+.get-in-touch .container .container-2 .image img {
+  width: 100%;
+}
+
+.footer {
+  background-color: rgb(23, 3, 3);
+}
+.footer .container {
+  padding-top: 90px;
+}
+.footer .container img {
+  margin-bottom: 23px;
+}
+.footer .container .target {
+  width: 300px;
+}
+.footer .container .target-2 {
+  margin-top: 60px;
+  font-size: 0.8rem;
+}
+.footer .container h4 {
+  margin-bottom: 30px;
+}
+.footer .container ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer .container ul li {
+  margin-bottom: 12px;
+}
+.footer .container ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgb(133, 130, 130);
+}
+.footer .container .social-media .svg-inline--fa {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 8px;
+}
+.footer .container form {
+  width: 410px;
+}
+.footer .container form input {
+  display: inline-block;
+  width: 43%;
+  padding: 12px 0px 12px 25px;
+  border-radius: 0px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: rgb(234, 239, 241);
+}
+.footer .container form button {
+  background-color: rgb(234, 239, 241);
+  width: 70px;
+  height: 50px;
+  border-radius: 0px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-left: -6px;
+  margin-top: -5px;
+  border-left: 1px solid white;
+}
+.footer .container form button .svg-inline--fa {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=health.css.map */
