@@ -834,7 +834,7 @@
     padding-bottom: 5px;
   }
   .appointment .schedule .boxes > div.bb {
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid rgb(238, 183, 87);
     margin-bottom: 15px;
   }
   .appointment .schedule .boxes .box-1 {
@@ -909,7 +909,7 @@
     margin-top: 40px;
   }
   .feedback h2 span {
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid rgb(238, 183, 87);
   }
   .feedback .container-3 {
     width: 70%;
@@ -921,6 +921,7 @@
     width: fit-content;
   }
   .feedback .container-3 .image img {
+    margin-left: 120px;
     width: 409.6px;
     height: 270.4px;
   }
@@ -969,7 +970,7 @@
     margin-bottom: 15px;
   }
   .get-in-touch .container .container-2 .text span {
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid rgb(238, 183, 87);
   }
   .get-in-touch .container .container-2 .text .target-2 {
     font-size: 0.8rem;
@@ -1323,52 +1324,65 @@
     top: -40px;
   }
   .feedback h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 35px;
-    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 35px;
   }
   .feedback h2 span {
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid rgb(238, 183, 87);
   }
   .feedback .container-3 {
-    width: 70%;
-    margin: auto;
+    width: 100%;
   }
   .feedback .container-3 .image {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 50%;
   }
   .feedback .container-3 .image img {
-    width: 409.6px;
-    height: 270.4px;
+    margin-left: 210px;
+    margin-top: 20px;
+    max-width: 260.6px;
+    max-height: 200.4px;
   }
   .feedback .carousel p {
-    font-size: 1rem;
+    width: 320px;
+    font-size: 0.7rem;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .feedback .carousel .carousel-inner .carousel-item .carousel-caption .svg-inline--fa {
-    margin-left: -30px;
-    font-size: 25px;
+    margin-left: -40px;
+    font-size: 15px;
   }
   .feedback .carousel .carousel-inner .carousel-item .carousel-caption .left-icon {
     margin-left: 0px;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
   }
   .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data img {
-    width: 86.6px;
-    height: 85.5px;
+    width: 66.6px;
+    height: 65.5px;
+    margin-bottom: 50px;
   }
   .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5 {
-    font-size: 18px;
-    left: -12px;
+    font-size: 14px;
+    left: -30px;
+    top: -40px;
   }
   .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5::after {
-    font-size: 12px;
+    font-size: 10px;
     top: 30px;
-    left: 25px;
+    left: 35px;
+  }
+  .feedback .carousel .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 8px;
+    margin-right: 5px;
+    margin-bottom: 35px;
+    border-radius: 50%;
+  }
+  .feedback .carousel .carousel-indicators .active {
+    width: 20px;
+    height: 7px;
   }
   .get-in-touch {
     margin-top: 20px;
