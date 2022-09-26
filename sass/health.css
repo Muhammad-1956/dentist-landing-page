@@ -325,7 +325,7 @@
   padding: 0px 0px;
 }
 .appointment .schedule .boxes .box-2 svg {
-  color: var(--main-color);
+  color: rgb(255, 187, 0);
   font-size: 20px;
 }
 .appointment .schedule .boxes .box-2 .dropdown {
@@ -383,7 +383,7 @@
   padding: 0px 0px;
 }
 .appointment .schedule .boxes .box-3 svg {
-  color: var(--main-color);
+  color: rgb(255, 187, 0);
   font-size: 20px;
 }
 .appointment .schedule .boxes .box-3 .dropdown {
@@ -1052,5 +1052,425 @@
   }
   .footer .container form button .svg-inline--fa {
     font-size: 1.1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /*
+  @mixin word($word,$color,$border-color,$top-value,$left-value) {
+      &::after {
+          content: $word;
+          position: absolute;
+          color: $color;
+          border-bottom: 4px solid $border-color;
+          top: $top-value;
+          left: $left-value;
+      }
+  }*/
+  .navbar {
+    min-height: 23px;
+  }
+  img {
+    width: 65%;
+  }
+  .navbar-light .navbar-toggler-icon {
+    font-size: 15px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 10px;
+  }
+  .btn {
+    padding: 5px 0.6rem;
+    font-size: 0.6rem;
+    margin-left: 20px;
+  }
+  .smile .container {
+    margin-top: 15px;
+  }
+  .smile .text {
+    width: 60%;
+  }
+  .smile .text h1 {
+    margin-top: 25px;
+    font-size: 0.8rem;
+  }
+  .smile .text h2 {
+    font-size: 1.7rem;
+  }
+  .smile .text P {
+    font-size: 0.7rem;
+    margin-bottom: 18px;
+  }
+  .smile .text .btns {
+    width: 90%;
+  }
+  .smile .text .btns button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+  .smile .image {
+    width: 40%;
+  }
+  .our-dentist {
+    margin-top: 40px;
+  }
+  .our-dentist .image img {
+    min-width: 90%;
+  }
+  .our-dentist .text {
+    width: 60%;
+  }
+  .our-dentist .text h2 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .our-dentist .text h2::after {
+    width: 50px;
+    height: 3px;
+    top: 40px;
+    left: 100px;
+  }
+  .our-dentist .text p {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .our-dentist .text ul li {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+  .our-dentist .text ul li::marker {
+    font-size: 1rem;
+  }
+  .our-dentist .text h2,
+.our-dentist .text p {
+    margin-bottom: 10px;
+  }
+  .communication {
+    margin-top: 20px;
+  }
+  .communication .im {
+    width: 14%;
+  }
+  .communication .im img {
+    margin-bottom: 10px;
+  }
+  .communication .im p {
+    font-size: 0.7rem;
+  }
+  .our-gallery {
+    margin-top: 20px;
+  }
+  .our-gallery .title .p-1 {
+    font-size: 1.5rem;
+  }
+  .our-gallery .title .p-1::after {
+    width: 75px;
+    height: 3px;
+    top: 39px;
+    right: 174px;
+  }
+  .our-gallery .title .p-2 {
+    font-size: 0.7rem;
+  }
+  .our-gallery .gallery {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+  }
+  .our-gallery .gallery img {
+    max-width: 200px;
+    max-height: 160px;
+  }
+  .our-gallery .gallery .img-mb {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .our-gallery .gallery div {
+    width: 60%;
+  }
+  .appointment {
+    margin-top: 25px;
+  }
+  .appointment p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .appointment p::after {
+    width: 95px;
+    height: 3px;
+    top: 24px;
+    right: 175px;
+  }
+  .appointment .image {
+    width: 35%;
+  }
+  .appointment .schedule {
+    width: 63%;
+  }
+  .appointment .schedule > div {
+    width: 100%;
+  }
+  .appointment .schedule .bb {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 5px;
+  }
+  .appointment .schedule h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .appointment .schedule .form-check {
+    margin-bottom: 5px;
+  }
+  .appointment .schedule .form-check-input {
+    width: 1.9rem;
+    height: 15px;
+  }
+  .appointment .schedule label {
+    font-size: 0.8rem;
+  }
+  .appointment .schedule .calender {
+    margin-bottom: 8px;
+  }
+  .appointment .schedule .boxes {
+    width: 47%;
+  }
+  .appointment .schedule .boxes h3 {
+    font-size: 0.7rem;
+  }
+  .appointment .schedule .boxes > div {
+    width: 100%;
+    padding-bottom: 1px;
+  }
+  .appointment .schedule .boxes > div.bb {
+    border-bottom: 3px solid var(--main-color);
+    margin-bottom: 15px;
+  }
+  .appointment .schedule .boxes .box-1 {
+    font-size: 0.5rem;
+    padding-left: 12px;
+  }
+  .appointment .schedule .boxes .box-1 span {
+    border-left: 2px solid #eee;
+    padding-left: 30px;
+    margin-left: 10px;
+  }
+  .appointment .schedule .boxes .box-2 {
+    font-size: 0.5rem;
+    padding-left: 12px;
+    max-height: 70px;
+    margin-bottom: 8px;
+  }
+  .appointment .schedule .boxes .box-2 p {
+    font-size: 0.6rem;
+    height: 20px;
+    padding-left: 20px;
+    margin-left: 3px;
+  }
+  .appointment .schedule .boxes .box-2 p::after {
+    width: 60px;
+    font-size: 7px;
+  }
+  .appointment .schedule .boxes .box-2 svg {
+    font-size: 12px;
+  }
+  .appointment .schedule .boxes .box-2 .dropdown {
+    margin-left: 110px;
+    top: -40px;
+  }
+  .appointment .schedule .boxes .box-2 .dropdown ul {
+    height: 62px;
+  }
+  .appointment .schedule .boxes .box-2 .dropdown ul li {
+    font-size: 0.5rem;
+  }
+  .appointment .schedule .boxes .box-3 {
+    font-size: 0.5rem;
+    padding-left: 12px;
+    max-height: 70px;
+    margin-bottom: 8px;
+  }
+  .appointment .schedule .boxes .box-3 p {
+    font-size: 0.6rem;
+    height: 20px;
+    padding-left: 20px;
+    margin-left: 3px;
+  }
+  .appointment .schedule .boxes .box-3 p::after {
+    width: 60px;
+    font-size: 7px;
+  }
+  .appointment .schedule .boxes .box-3 svg {
+    font-size: 12px;
+  }
+  .appointment .schedule .boxes .box-3 .dropdown {
+    margin-left: 110px;
+    top: -40px;
+  }
+  .appointment .schedule .boxes .box-3 .dropdown ul {
+    height: 62px;
+  }
+  .appointment .schedule .boxes .box-3 .dropdown ul li {
+    font-size: 0.5rem;
+  }
+  .appointment .schedule .boxes .box-4 .dropdown {
+    left: 0px;
+    top: -40px;
+  }
+  .appointment .schedule .boxes .box-6 .dropdown {
+    left: 0px;
+    top: -40px;
+  }
+  .feedback h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+  .feedback h2 span {
+    border-bottom: 3px solid var(--main-color);
+  }
+  .feedback .container-3 {
+    width: 70%;
+    margin: auto;
+  }
+  .feedback .container-3 .image {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .feedback .container-3 .image img {
+    width: 409.6px;
+    height: 270.4px;
+  }
+  .feedback .carousel p {
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  .feedback .carousel .carousel-inner .carousel-item .carousel-caption .svg-inline--fa {
+    margin-left: -30px;
+    font-size: 25px;
+  }
+  .feedback .carousel .carousel-inner .carousel-item .carousel-caption .left-icon {
+    margin-left: 0px;
+    margin-bottom: -10px;
+  }
+  .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data img {
+    width: 86.6px;
+    height: 85.5px;
+  }
+  .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5 {
+    font-size: 18px;
+    left: -12px;
+  }
+  .feedback .carousel .carousel-inner .carousel-item .carousel-caption .personal-data h5::after {
+    font-size: 12px;
+    top: 30px;
+    left: 25px;
+  }
+  .get-in-touch {
+    margin-top: 20px;
+  }
+  .get-in-touch .container .container-2 {
+    width: 100%;
+  }
+  .get-in-touch .container .container-2 .text {
+    width: 45%;
+  }
+  .get-in-touch .container .container-2 .text h5 {
+    font-size: 0.9rem;
+  }
+  .get-in-touch .container .container-2 .text .target {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .get-in-touch .container .container-2 .text span {
+    border-bottom: 2px solid rgb(238, 183, 87);
+  }
+  .get-in-touch .container .container-2 .text .target-2 {
+    font-size: 0.7rem;
+    width: 90%;
+    margin-bottom: 14px;
+  }
+  .get-in-touch .container .container-2 .text form {
+    width: 310px;
+  }
+  .get-in-touch .container .container-2 .text form input {
+    width: 48%;
+    padding: 5px 0px 5px 13px;
+    border-radius: 0px;
+  }
+  .get-in-touch .container .container-2 .text form input::-moz-placeholder {
+    font-size: 10px;
+  }
+  .get-in-touch .container .container-2 .text form input:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  .get-in-touch .container .container-2 .text form input::placeholder {
+    font-size: 10px;
+  }
+  .get-in-touch .container .container-2 .text form button {
+    width: 70px;
+    height: 36px;
+    font-size: 10px;
+  }
+  .get-in-touch .container .container-2 .image {
+    width: 55%;
+  }
+  .footer .container {
+    padding-top: 50px;
+  }
+  .footer .container img {
+    margin-bottom: 13px;
+  }
+  .footer .container .target {
+    width: 250px;
+  }
+  .footer .container p {
+    font-size: 10px;
+  }
+  .footer .container .target-2 {
+    margin-top: 35px;
+    font-size: 0.6rem;
+  }
+  .footer .container h4 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .footer .container ul li {
+    margin-bottom: 5px;
+  }
+  .footer .container ul li a {
+    font-size: 0.7rem;
+  }
+  .footer .container .social-media .svg-inline--fa {
+    margin-top: 8px;
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+  }
+  .footer .container form input {
+    width: 27%;
+    padding: 5px 0px 5px 15px;
+  }
+  .footer .container form input::-moz-placeholder {
+    font-size: 11px;
+  }
+  .footer .container form input:-ms-input-placeholder {
+    font-size: 11px;
+  }
+  .footer .container form input::placeholder {
+    font-size: 11px;
+  }
+  .footer .container form button {
+    width: 50px;
+    height: 36px;
+  }
+  .footer .container form button .svg-inline--fa {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=health.css.map */

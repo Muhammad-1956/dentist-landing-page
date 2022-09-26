@@ -45,7 +45,7 @@
         padding: 0px 0px;
     }
     svg{
-        color: var(--main-color);
+        color: $yellow-color;
         font-size: 20px;
     }
     .dropdown{
@@ -675,7 +675,7 @@
 //-------------End Footer Section---------------------
 //-------------Start Medium Screen---------------------
 @media (min-width: 768px) and (max-width: 991.98px) {
-    //-------------Start Mixins---------------------
+//-------------Start Mixins---------------------
 @mixin box {
     font-size: 0.7rem;
     padding-left: 12px;
@@ -1143,3 +1143,467 @@
 }
 
 //-------------End Medium Screen---------------------
+
+//-------------Start Mobile Screen-------------------
+@media (min-width: 576px) and (max-width: 767.98px){
+//-------------Start Mixins---------------------
+ @mixin box {
+    font-size: 0.5rem;
+    padding-left: 12px;
+}
+@mixin box-customized{
+    @include box();
+    max-height: 70px;
+    margin-bottom: 8px;
+    p{
+        font-size: 0.6rem;
+        height: 20px;
+        padding-left: 20px;
+        margin-left: 3px;
+        &::after{
+            width: 60px;
+            font-size: 7px;
+        }
+    }
+    svg{
+        font-size: 12px;
+    }
+    .dropdown{
+        margin-left: 110px;
+        top: -40px;
+        ul{
+            height: 62px;
+            li{
+                font-size: 0.5rem
+            }
+        }
+    }
+}
+/*
+@mixin word($word,$color,$border-color,$top-value,$left-value) {
+    &::after {
+        content: $word;
+        position: absolute;
+        color: $color;
+        border-bottom: 4px solid $border-color;
+        top: $top-value;
+        left: $left-value;
+    }
+}*/
+//-------------End Mixins---------------------
+    //-------------Start Navbar---------------------
+.navbar {
+    min-height: 23px;
+}
+img{
+    width: 65%;
+}
+.navbar-light {
+    .navbar-toggler-icon {
+        font-size: 15px;
+    }
+    .navbar-nav {
+        .nav-link {
+            font-size: 10px;
+        }
+    }
+}
+
+.btn {
+    padding: 5px 0.6rem;
+    font-size: .6rem;
+    margin-left: 20px;
+}
+
+//-------------End Navbar---------------------
+//-------------Start Smile Section---------------------
+.smile {
+    .container {
+        margin-top: 15px;
+    }
+
+    .text {
+        width: 60%;
+
+        h1 {
+            margin-top: 25px;
+            font-size: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        P {
+            font-size: .7rem;
+            margin-bottom: 18px;
+        }
+        .btns {
+            width: 90%;
+            button {
+                padding: 8px 15px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .image {
+        width: 40%;
+    }
+}
+
+//-------------End Smile Section---------------------
+//-------------Start Our Dentist Section---------------------
+.our-dentist {
+    margin-top: 40px;
+
+    .image {
+        img {
+            min-width: 90%;
+        }
+    }
+
+    .text {
+        width: 60%;
+        h2 {
+            font-size: 1.0rem;
+            font-weight: 200;
+            &::after {
+                width: 50px;
+                height: 3px;
+                top: 40px;
+                left: 100px;
+            }
+        }
+        p {
+            font-size: 0.7rem;
+            width: 100%;
+        }
+        ul {
+            li {
+                font-size: 0.8rem;
+                font-weight: 300;
+                margin-bottom: 0px;
+                &::marker {
+                    font-size: 1.0rem;
+                }
+            }
+        }
+        h2,
+        p {
+            margin-bottom:10px;
+        }
+    }
+}
+
+//-------------End Our Dentist Section---------------------
+//-------------Start Communication Section---------------------
+.communication {
+    margin-top: 20px;
+    .im {
+        width: 14%;
+        img {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+//-------------End Communication Section---------------------
+//-------------Start Our Gallery Section---------------------
+.our-gallery {
+    margin-top: 20px;
+    .title {
+        .p-1 {
+            font-size: 1.5rem;
+            &::after {
+                width: 75px;
+                height: 3px;
+                top: 39px;
+                right: 174px
+            }
+        }
+
+        .p-2 {
+            font-size: 0.7rem;
+        }
+    }
+
+    .gallery {
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+        img {
+            max-width: 200px;
+            max-height: 160px;
+        }
+        .img-mb {
+            margin-bottom:10px;
+            margin-right: 10px;
+        }
+        div {
+            width: 60%
+        }
+    }
+}
+
+//-------------End Our Gallery Section---------------------
+//-------------Start An Appointment Section---------------------
+.appointment {
+    margin-top: 25px;
+    p {
+        font-size: 1.0rem;
+        margin-bottom: 20px;
+        &::after {
+            width: 95px;
+            height: 3px;
+            top: 24px;
+            right: 175px;
+        }
+    }
+    .image{
+        width: 35%
+    }
+    .schedule {
+        width: 63%;
+        & > div{
+            width: 100%;
+        }
+        .bb{
+            border-bottom: 2px solid #eee;
+            margin-bottom: 5px;
+        }
+        h2{
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .form-check {
+            margin-bottom: 5px;
+            &-input {
+                width: 1.9rem;
+                height: 15px;
+            }
+        }
+        label {
+            font-size: 0.8rem;
+        }
+        .calender{
+            margin-bottom: 8px;
+        }
+        .boxes{
+            width: 47%;
+            h3{
+                font-size: 0.7rem;
+            }
+            & > div{
+                width: 100%;
+                padding-bottom: 1px;
+                &.bb{
+                    border-bottom: 3px solid var(--main-color);
+                    margin-bottom: 15px;
+                }
+            }
+            .box-1{
+                @include box();
+                span{
+                    border-left: 2px solid #eee;
+                    padding-left: 30px;
+                    margin-left: 10px;
+                }
+            }
+            .box-2{
+                @include box-customized();
+            }
+            .box-3{
+                @include box-customized();
+            
+            }
+            .box-4{
+                .dropdown{
+                    left: 0px;
+                    top: -40px;
+                }
+            }
+            .box-6{
+                .dropdown{
+                    left: 0px;
+                    top: -40px;
+                }
+            }
+        }
+    }
+}
+//-------------End An Appointment Section---------------------
+//-------------Start Feedback Section---------------------
+.feedback{
+    h2{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 35px;
+        margin-top: 40px;
+        span{
+            border-bottom: 3px solid var(--main-color);
+        }
+    }
+    .container-3{
+        width: 70%;
+        margin: auto;
+        .image{
+            width: fit-content;
+            img{
+                width: 409.6px;
+                height: 270.4px;
+            }
+        }
+    }
+    .carousel{
+        p{
+            font-size: 1.0rem;
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
+        .carousel-inner{
+            .carousel-item {
+                .carousel-caption{
+                    .svg-inline--fa {
+                        margin-left: -30px;
+                        font-size: 25px;
+                    }
+                    .left-icon{
+                        margin-left: 0px;
+                        margin-bottom: -10px;
+                    }
+                    .personal-data{
+                        img{
+                            width: 86.6px;
+                            height: 85.5px;
+                        }
+                        h5{
+                            font-size: 18px;
+                            left: -12px;
+                            &::after{
+                                font-size: 12px;
+                                top: 30px;
+                                left: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//-------------End Feedback Section---------------------
+//-------------Start Get In Touch Section---------------------
+.get-in-touch{
+    margin-top: 20px;
+    .container{
+        .container-2{
+            width: 100%;
+            .text{
+                width: 45%;
+                h5{
+                    font-size: 0.9rem;
+                }
+                .target{
+                    font-size: 1.0rem;
+                    margin-bottom: 10px;
+                }
+                span{
+                    border-bottom: 2px solid $main-color;
+                }
+                .target-2{
+                    font-size: 0.7rem;
+                    width: 90%;
+                    margin-bottom: 14px;
+                }
+                form{
+                    width: 310px;
+                    input{
+                        width: 48%;
+                        padding: 5px 0px 5px 13px;
+                        border-radius: 0px;
+                        &::placeholder{
+                            font-size: 10px;
+                        }
+                    }
+                    button{
+                        width: 70px;
+                        height: 36px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .image{
+                width: 55%;
+            }
+        }
+        
+    }
+}
+//-------------End Get In Touch Section---------------------
+//-------------Start Footer Section---------------------
+.footer{
+    .container{
+        padding-top: 50px;
+        img{
+            margin-bottom: 13px;
+        }
+        .target{
+            width: 250px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .target-2{
+            margin-top: 35px;
+            font-size: .6rem;
+        }
+        h4{
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        ul{
+            li{
+                margin-bottom: 5px;
+                a{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+        .social-media{
+            .svg-inline--fa {
+                margin-top: 8px;
+                width: 8px;
+                height: 8px;
+                margin-right: 2px;
+            }
+        }
+        form{
+            input{
+                width: 27%;
+                padding: 5px 0px 5px 15px;
+                &::placeholder{
+                    font-size: 11px;
+                }
+            }
+            button{
+                width: 50px;
+                height: 36px;
+                .svg-inline--fa{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+//-------------End Footer Section---------------------
+}
+//-------------End Mobile Screen---------------------
